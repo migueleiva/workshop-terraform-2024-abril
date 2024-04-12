@@ -1,0 +1,5 @@
+
+resource "aws_instance" "instancia_lookup" {
+  instance_type = lookup(var.instance_config, "instance_type", "t2.micro")
+  ami           = lookup(var.instance_config, "ami_id", "ami-051f8a213df8bc089")
+}

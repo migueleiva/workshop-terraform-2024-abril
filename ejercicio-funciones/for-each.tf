@@ -1,5 +1,3 @@
-
-
 # Recurso para crear usuarios de IAM usando `for_each`
 resource "aws_iam_user" "familia" {
   for_each = toset(var.user_names2)  # Convertimos la lista a un conjunto para eliminar posibles duplicados

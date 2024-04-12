@@ -1,4 +1,3 @@
-
 # Recurso para crear usuarios de IAM utilizando `count`
 resource "aws_iam_user" "users" {
   count = length(var.user_names)  # `count` especifica cuántos usuarios se deben crear
