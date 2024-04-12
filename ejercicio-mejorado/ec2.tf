@@ -3,7 +3,7 @@
 # Define una instancia EC2 con AMI Ubuntu
 # ---------------------------------------
 resource "aws_instance" "mi_servidor" {
-  ami                    = "ami-xxxxxxxxx"
+  ami                    = "ami-051f8a213df8bc089"
   instance_type          = "t3.large"
   #vpc_security_group_ids = "mifireall" 
   #depedencia implicita
