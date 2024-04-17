@@ -1,11 +1,9 @@
 terraform {
   cloud {
+    #valores entregados por el workspace de terraform cloud
     organization = "braintcamp"
-    #hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
     workspaces {
-      name = "ejercicio-cloud"
-      #project = "braintcamp-devops"
-      #tags = ["networking", "source:cli"]
+      name = "ejercicio-cloud-2"
     }
   }
 }
